@@ -6,8 +6,9 @@ Created on Jul 14, 2016
 # This file contains all the movie objects constructed based on video class
 
 import video  #import video module to use Movie class
+import fresh_tomatoes  #import fresh_tomatoes script to generate html
 
-# all the movie instances as defined here
+# all the movie instances are defined here
 the_fountain = video.Movie("The Fountain",
                         """ As a modern-day scientist, Tommy is struggling with mortality, desperately searching for the medical breakthrough that will save the life of his cancer-stricken wife, Izzi.""",
                         "http://ia.media-imdb.com/images/M/MV5BMTU5OTczMTcxMV5BMl5BanBnXkFtZTcwNDg3MTEzMw@@._V1_SX640_SY720_.jpg",
@@ -37,4 +38,10 @@ hunger_games = video.Movie("The Hunger Games",
                    "Katniss Everdeen voluntarily takes her younger sister's place in the Hunger Games, a televised competition in which two teenagers from each of the twelve Districts of Panem are chosen at random to fight to the death.",
                    "http://ia.media-imdb.com/images/M/MV5BMjA4NDg3NzYxMF5BMl5BanBnXkFtZTcwNTgyNzkyNw@@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
                    "https://youtu.be/mfmrPu43DF8")
+
+# define all the movie objects in a list so that it can pass through function
+# easily
+movies = [the_fountain, avatar, school_of_rock, ratatouille, midnigh_in_paris, hunger_games]
+#pass movies list to the html generator script
+fresh_tomatoes.open_movies_page(movies)
 
