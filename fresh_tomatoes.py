@@ -15,6 +15,7 @@ main_page_head = '''
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
@@ -67,6 +68,10 @@ main_page_head = '''
             border-radius: 8px;
             text-align: center;
             text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        
+        .story{
+            text-align: justify;
         }
     </style>
     <script type="text/javascript" charset="utf-8">
@@ -142,10 +147,15 @@ main_page_content = '''
 
 # A single movie entry html template
 movie_tile_content = '''
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-    <img src="{poster_image_url}" width="220" height="342">
-    <h2>{movie_title}</h2>
-</div>
+  <div class="col-sm-6 col-md-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
+    <div class="thumbnail">
+      <img src="{poster_image_url}" alt="{movie_title}">
+      <div class="caption">
+        <h3>{movie_title}</h3>
+        <p class="story">{movie_storyline}</p>
+      </div>
+    </div>
+  </div>
 '''
 
 
@@ -164,6 +174,7 @@ def create_movie_tiles_content(movies):
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
             movie_title=movie.title,
+            movie_storyline=movie.storyline,
             poster_image_url=movie.poster_image_url,
             trailer_youtube_id=trailer_youtube_id
         )
