@@ -41,6 +41,8 @@ main_page_head = '''
         }
         .movie-tile:hover {
             background-color: #EEE;
+            border: 3px solid black;
+            border-radius: 10px;
             cursor: pointer;
         }
         .scale-media {
@@ -58,7 +60,6 @@ main_page_head = '''
         }
         .jumbotron{
             background-color: rgba(171, 235, 198,1);
-            
         }
         
         .headerContent{
