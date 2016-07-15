@@ -139,12 +139,15 @@ main_page_content = '''
         </div>
       </div>
     </div>
+    <!-- Definition of Jumbotron -->
     <div class="jumbotron">
       <div class="container headerContent">
         <h1 class="title">Welcome To MoTrail!</h1>
         <p>Click anyone of the movies to watch the trailer</p>
       </div>
     </div>
+    
+    <!-- Definition of Movie tiles or thumbnails -->
     <div class="container">
       {movie_tiles}
     </div>

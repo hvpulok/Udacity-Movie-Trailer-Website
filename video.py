@@ -11,7 +11,7 @@ class Movie():
     title (str): Title of the Movie
     storyline (str): Short Story of the Movie
     poster_image_url: Image url link like http://sample_image.com/das32ds32.png
-    trailer_youtube_url: trailer video link """
+    trailer_youtube_url: Trailer video link """
         
     def __init__(self, title, story, poster_url, trailer_url):
         self.title = title
