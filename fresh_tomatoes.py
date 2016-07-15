@@ -53,7 +53,20 @@ main_page_head = '''
             width: 100%;
             left: 0;
             top: 0;
-            background-color: white;
+            background-color: white;      
+        }
+        .jumbotron{
+            background-color: rgba(171, 235, 198,1);
+            
+        }
+        
+        .headerContent{
+            background-color: rgba(256, 256, 256,0.3);
+            border: 1px solid rgba(256, 256, 256,.3);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0,.05);
+            border-radius: 8px;
+            text-align: center;
+            text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
         }
     </style>
     <script type="text/javascript" charset="utf-8">
@@ -114,10 +127,9 @@ main_page_content = '''
       </div>
     </div>
     <div class="jumbotron">
-      <div class="container">
-        <h1>Welcome To MoTrail!</h1>
+      <div class="container headerContent">
+        <h1 class="title">Welcome To MoTrail!</h1>
         <p>Click anyone of the movies to watch the trailer</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
       </div>
     </div>
     <div class="container">
