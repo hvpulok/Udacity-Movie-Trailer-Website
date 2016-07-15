@@ -35,10 +35,13 @@ main_page_head = '''
             width: 100%;
             height: 100%;
         }
+        
         .movie-tile {
             margin-bottom: 20px;
             padding-top: 20px;
+            border: 3px solid white;
         }
+        
         .movie-tile:hover {
             background-color: #EEE;
             border: 3px solid black;
@@ -73,6 +76,10 @@ main_page_head = '''
         
         .story{
             text-align: justify;
+        }
+        
+        .thumbnail{
+            height: 750px;
         }
     </style>
     <script type="text/javascript" charset="utf-8">
