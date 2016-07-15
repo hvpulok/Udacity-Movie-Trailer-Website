@@ -9,7 +9,7 @@ main_page_head = '''
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Fresh Tomatoes!</title>
+    <title>MoTrail</title>
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
@@ -105,9 +105,19 @@ main_page_content = '''
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon glyphicon-film" aria-hidden="true"></span> MoTrail</a>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+            </ul>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Welcome To MoTrail!</h1>
+        <p>Click anyone of the movies to watch the trailer</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
       </div>
     </div>
     <div class="container">
